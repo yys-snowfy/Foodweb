@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .wrapper {
+    
+    padding: 2%;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .text-center{
+    text-align: center;
+  }
+  .clearfix{
+    float: none;
+    clear:both;
+  }
+  
+  .footer{
+    background-color: #00a8ff;
+  }
+
+  .menu {
+    text-align: center;
+    border-bottom: 1px solid maroon;
+  }
+  .menu ul {
+  list-style: none;  
+  
+  }
+  .menu ul li {
+    display: inline;
+    padding: 1%;
+  }
+  .menu ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #00a8ff;
+  }
+  .menu ul li a:hover{
+    color:#00a8ff;
+  }
+
+  .main{
+   margin: 1% 0%; 
+   background-color: #f1f2f6;
+  }
+  .col4{
+    width: 17%;
+    background-color: white;
+    margin: 1%;
+    padding: 2%;
+    float: left;
+  }
+  .tblfull{
+    width:80% ;
+  }
+  table tr th{
+    border-bottom: 1px solid grey;
+    padding: 1%;
+    text-align: left ;
+  }
+  table tr td{
+    padding: 1%;
+  }
+
+  .primarybtn
+   {
+    background-color:#00a8ff ;
+    padding: 1%;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+  }
+
+.primarybtn:hover
+{
+  background-color:#3742fa !important;
+  color: black;
+  text-decoration: none;
+
+}
+
+
+.secondarybtn {
+  background-color:green ;
+  padding: 1%;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  text-align: left;
+}
+.secondarybtn:hover {
+background-color: #3742fa;
+color: black;
+text-decoration: none;
+}
+
+
+.dangerbtn {
+  background-color:red ;
+  padding: 1%;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  text-align: left;
+}
+.dangerbtn:hover{
+background-color: #3742fa;
+color: black;
+text-decoration: none;
+}
