@@ -63,12 +63,12 @@
                         <a class="log-popup-btn" href="#" title="Login" itemprop="url">LOGIN</a> / <a class="sign-popup-btn" href="#" title="Register" itemprop="url">REGISTER</a>
                     </div>
                     <div class="social1">
-                        <a href="#" title="Facebook" itemprop="url" target="_blank"><i class="fa fa-facebook-square"></i></a>
+                        <!-- <a href="#" title="Facebook" itemprop="url" target="_blank"><i class="fa fa-facebook-square"></i></a>
                         <a href="#" title="Twitter" itemprop="url" target="_blank"><i class="fa fa-twitter"></i></a>
-                        <a href="#" title="Google Plus" itemprop="url" target="_blank"><i class="fa fa-google-plus"></i></a>
+                        <a href="#" title="Google Plus" itemprop="url" target="_blank"><i class="fa fa-google-plus"></i></a> -->
                     </div>
                 </div>                
-            </div><!-- Topbar -->
+            </div>
             <div class="logo-menu-sec">
                 <div class="container">
                     <div class="logo"><h1 itemprop="headline"><a href="../file/index.php" title="Home" itemprop="url"><img src="../assets/images/momologo.png" alt="logo.png" itemprop="image"></a></h1></div>

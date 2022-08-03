@@ -1,4 +1,4 @@
-    <link rel="stylesheet" href="../assets/css/icons.min.css">
+F    <link rel="stylesheet" href="../assets/css/icons.min.css">
     <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="../assets/css/animate.min.css">
     <link rel="stylesheet" href="../assets/css/main.css">
@@ -18,7 +18,7 @@
                                     <div class="col-md-3 col-sm-6 col-lg-3">
                                         <div class="widget about_widget wow fadeIn" data-wow-delay="0.1s">
                                             <div class="logo"><h1 itemprop="headline"><a href="#" title="Home" itemprop="url"><img src="../assets/images/logo.png" alt="logo.png" itemprop="image"></a></h1></div>
-                                            <p itemprop="description">Food Ordering is a Premium HTML Template. Best choice for your online store. Let purchase it to enjoy now</p>
+                                            <p itemprop="description">Food web is a best food Ordering Website. Best choice for your online store. Let purchase it to enjoy now !</p>
                                             <div class="social2">
                                                 <a class="brd-rd50" href="#" title="Facebook" itemprop="url" target="_blank"><i class="fa fa-facebook"></i></a>
                                                 <a class="brd-rd50" href="#" title="Google Plus" itemprop="url" target="_blank"><i class="fa fa-google-plus"></i></a>
@@ -55,7 +55,7 @@
                                         <div class="widget get_in_touch wow fadeIn" data-wow-delay="0.4s">
                                             <h4 class="widget-title" itemprop="headline">GET IN TOUCH</h4>
                                             <ul>
-                                               <li><i class="fa fa-map-marker"></i> 123 New Design Str, ABC Building, melbourne, Australia.</li>
+                                               <li><i class="fa fa-map-marker"></i> 123 New Design Str, ABC Building, kathmandu, Nepal.</li>
                                                <li><i class="fa fa-phone"></i> (+977) 9856798216</li>
                                                <li><i class="fa fa-envelope"></i> <a href="#" title="" itemprop="url">foodweb@gmail.com</a></li>
                                             </ul>
@@ -116,7 +116,7 @@
                                 <button class="red-bg brd-rd3" type="submit">SIGN IN</button>
                             </div>
                             <div class="col-md-12 col-sm-12 col-lg-12">
-                                <a class="sign-btn" href="#" title="" itemprop="url">Not a member? Sign up</a>
+                                <a class="sign-btn"  href="#" title="" itemprop="url">Not a member? Sign up</a>
                                 <a class="recover-btn" href="#" title="" itemprop="url">Recover my password</a>
                             </div>
                         </div>
