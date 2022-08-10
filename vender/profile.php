@@ -18,10 +18,14 @@ include '../vender/header.php';
                         $state = $fetch['states'];
                         $city = $fetch['city'];
                         $username = $fetch['username'];
+                    }
+
+                  }
+                }
                     ?>
 
 <div class="container">      
-<form class="needs-validation" novalidate class="ml-5" >
+<form class="needs-validation" novalidate class="ml-5" method="POST" action="" enctype="multipart/form-data">
     <h1> Profile Information</h1>
     <hr>
 <div class="form-row">
@@ -119,9 +123,46 @@ include '../vender/header.php';
  
 
 <?php
-      }
-         
-  }
+     
+if(isset($_POST['submit'])){  
+// profile update code
+$resname= $_POST['resname'];
+$resphone=$_POST['resphone'];
+$managername=$_POST['managername'];
+$managercontact=$_POST['managerContact'];
+$contactemail =$_POST['contactemail'];
+$country =$_POST['country'];
+$states =$_POST['state'];
+$city =$_POST['city'];
+$username =$_POST['username'];
+// $password=$_REQUEST['password'];
+
+$update="UPDATE foods set
+    resname = '$resname',
+    resphone = '$resphone',
+    managername ='$managername',
+    managercontact ='$managercontact',
+    contactemail ='$contactemail',
+    country ='$country',
+    states = '$state',
+    city ='$city',
+    username='$username',
+    where id = '$id'
+    ";
+
+ //execute the query
+$res = mysqli_query($conn, $update);
+
+//checking whether the query is executed successfully or not
+if($res == true){
+    $status = "success";
+    $msg = 'Data Update successfully';
+    header("location:food.php?msg=".$msg."&&status=".$status);
+}else{
+    $status = "error";
+    $msg = 'oops Error';
+    header("location:food.php?msg=".$msg."&&status=".$status);
+}
 }
 
 
