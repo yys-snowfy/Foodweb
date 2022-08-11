@@ -10,9 +10,13 @@ $states =$_REQUEST['state'];
 $city =$_REQUEST['city'];
 $username =$_REQUEST['username'];
 $password=$_REQUEST['password'];
+$time=time();
+$filename =$time.'_'.$_FILES["image"]["name"];
+$tempname= $_FILES['image']['tmp_name'];
+$folder = "../assets/uploadedimage/reslogo/".$filename;
 
 if ($_REQUEST["password"] == $_REQUEST["confirm_password"]) {
-  $sql = "INSERT INTO vendor (resname,resphone,managername,managercontact,contactemail,country,states,city,username,passwords) VALUES ('$resname','$resphone','$managername','$managercontact','$contactemail','$country','$states','$city','$username','$password')";
+  $sql = "INSERT INTO vendor (resname,resphone,managername,managercontact,contactemail,country,states,city,username,passwords,reslogo) VALUES ('$resname','$resphone','$managername','$managercontact','$contactemail','$country','$states','$city','$username','$password','$filename')";
 
 }
 else {   
@@ -21,10 +25,6 @@ else {
   
   exit;
 }
-//  echo $resname,"<br>",$resphone,"<br>",$managername,"<br>",$managercontact,"<br>",$contactemail,"<br>",$country,"<br>",$states,"<br>",$city,"<br>",$username,"<br>",$email;
-
-
-
 
 if ($conn->query($sql)==TRUE) {
     echo "New record created successfully";

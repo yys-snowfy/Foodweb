@@ -39,7 +39,14 @@ include '../layout/heading.php';
                                                     <div class="tab-pane fade in active" id="reservation-tab1">
                                                         <form class="restaurant-info-form brd-rd5" method="post" action="res_register_upload.php">
                                                             <div class="row mrg20">
-                                                                <div class="col-md-6 col-sm-6 col-lg-6">
+                                                            <div class="text-center">
+                                                                <img src="" class="rounded" alt="." id="img"  style="height: 200px; width: 200px; border-radius:10px;">                                                               
+                                                            </div>
+                                                            <div class="custom-file">
+                                                                    <label>Restaurant logo <sup>*</sup></label>
+                                                                    <input type="file" name="image" accept="image/*" id="fileinput" onchange="document.getElementById('img').src = window.URL.createObjectURL(this.files[0])">                                                                 
+                                                                </div>
+                                                               <div class="col-md-6 col-sm-6 col-lg-6">
                                                                     <label>Restaurant name <sup>*</sup></label>
                                                                     <input class="brd-rd3" type="text" name="resname">
                                                                 </div>
