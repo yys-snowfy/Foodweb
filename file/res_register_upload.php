@@ -25,9 +25,14 @@ else {
   
   exit;
 }
+if(move_uploaded_file($tempname,$folder))
+ {
+        //code
+ }
 
 if ($conn->query($sql)==TRUE) {
     echo "New record created successfully";
+    header ("Location: restaurent_register.php");
   } else {
     echo "Error: " . $sql . "<br>" . $conn->error;
   }

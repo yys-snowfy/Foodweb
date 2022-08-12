@@ -37,7 +37,7 @@ include '../layout/heading.php';
                                             <div class="reservation-tab-content">
                                                 <div class="tab-content">
                                                     <div class="tab-pane fade in active" id="reservation-tab1">
-                                                        <form class="restaurant-info-form brd-rd5" method="post" action="res_register_upload.php">
+                                                        <form class="restaurant-info-form brd-rd5" method="post" action="res_register_upload.php" enctype="multipart/form-data">
                                                             <div class="row mrg20">
                                                             <div class="text-center">
                                                                 <img src="" class="rounded" alt="." id="img"  style="height: 200px; width: 200px; border-radius:10px;">                                                               
