@@ -96,7 +96,7 @@ include '../vender/header.php';
      </div>
   </div>
   <input type="hidden" name="id" value="<?= $id ?>">
-  <input type="hidden" name="old_image" value="../assets/uploadedimage/reslogo/<?php echo $logo; ?>">
+  <input type="hidden" name="old_filename" value="<?= $logo ?>">
   <button class="btn btn-primary" type="submit" name="submit">Update</button>
 </form>
 <hr>
@@ -130,9 +130,19 @@ include '../vender/header.php';
  
 
 <?php
-     
+  // profile update code
+
 if(isset($_POST['submit'])){  
-// profile update code
+ $time=time();
+        if(isset( $_FILES["image"] ) && !empty( $_FILES["image"]["name"] )){
+            $filename =$time.'_'.$_FILES["image"]["name"];
+            $tempname= $_FILES['image']['tmp_name'];
+            $folder = "../assets/uploadedimage/reslogo/".$filename;
+        }else{
+            if(isset( $_POST['old_filename']) ){
+                $filename = $_POST['old_filename'];
+            }
+        }
 $id=$_POST['id'];
 $resname= $_POST['resname'];
 $resphone=$_POST['resphone'];
@@ -144,10 +154,10 @@ $states =$_POST['state'];
 $city =$_POST['city'];
 $username =$_POST['username'];
 
-$time=time();
-$filename =$time.'_'.$_FILES["image"]["name"];
-$tempname= $_FILES['image']['tmp_name'];
-$folder = "../assets/uploadedimage/reslogo/".$filename;   
+// $time=time();
+// $filename =$time.'_'.$_FILES["image"]["name"];
+// $tempname= $_FILES['image']['tmp_name'];
+// $folder = "../assets/uploadedimage/reslogo/".$filename;   
 
   $update="UPDATE vendor set
     resname = '$resname',

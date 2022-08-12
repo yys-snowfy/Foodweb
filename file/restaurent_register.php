@@ -9,7 +9,7 @@ include '../layout/heading.php';
                     <div class="col-md-12 col-sm-12 col-lg-12">
                         <div class="page-title-inner">
                             <h1 itemprop="headline">Register Restaurant</h1>
-                                <span>A Greate Restaurant Website</span>
+                                <span>A Create Restaurant Website</span>
                         </div>
                     </div>
                 </div>
@@ -120,7 +120,7 @@ include '../layout/heading.php';
                                                                 <div class="col-md-6 col-sm-6 col-lg-6">
                                                                     <label> <sup> Conform Password*</sup></label>
                                                                     <input class="brd-rd3" type="password" name="confirm_password">
-                                                                </div
+                                                                        </div>
                                                                 <div class="col-md-12 col-sm-12 col-lg-12">
                                                                     <div class="check-box">
                                                                         <input type="checkbox" id="agrement">
