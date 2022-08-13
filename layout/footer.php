@@ -1,4 +1,4 @@
-F    <link rel="stylesheet" href="../assets/css/icons.min.css">
+    <link rel="stylesheet" href="../assets/css/icons.min.css">
     <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="../assets/css/animate.min.css">
     <link rel="stylesheet" href="../assets/css/main.css">
@@ -9,7 +9,7 @@ F    <link rel="stylesheet" href="../assets/css/icons.min.css">
 
 
 <footer>
-            <div class="block top-padd80 bottom-padd80 dark-bg">
+        <div class="block top-padd80 bottom-padd80 dark-bg">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12 col-sm-12 col-lg-12">
@@ -162,6 +162,6 @@ F    <link rel="stylesheet" href="../assets/css/icons.min.css">
                 </div>
             </div>
         </div>
-    </main> -->
+    </main> 
     
     <!-- Main Wrapper -->
