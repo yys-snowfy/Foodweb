@@ -17,7 +17,7 @@ F    <link rel="stylesheet" href="../assets/css/icons.min.css">
                                 <div class="row">
                                     <div class="col-md-3 col-sm-6 col-lg-3">
                                         <div class="widget about_widget wow fadeIn" data-wow-delay="0.1s">
-                                            <div class="logo"><h1 itemprop="headline"><a href="#" title="Home" itemprop="url"><img src="../assets/images/logo.png" alt="logo.png" itemprop="image"></a></h1></div>
+                                            <div class="logo"><h1 itemprop="headline"><a href="../file/index.php" title="Home" itemprop="url"><img src="../assets/images/foodweb.jpg" alt="logo.png" itemprop="image" height="50px" style="border-radius: 10px"></a></h1></div>
                                             <p itemprop="description">Food web is a best food Ordering Website. Best choice for your online store. Let purchase it to enjoy now !</p>
                                             <div class="social2">
                                                 <a class="brd-rd50" href="#" title="Facebook" itemprop="url" target="_blank"><i class="fa fa-facebook"></i></a>

@@ -6,7 +6,7 @@
     <meta name="description" content="" />
     <meta name="keywords" content="" />
     <title>Food Web</title>
-    <link rel="shortcut icon" href="../assets/images/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../assets/images/3.jpg" type="image/x-icon" style="border-radius:50%;">
     
 
     <link rel="stylesheet" href="../assets/css/icons.min.css">
@@ -71,7 +71,13 @@
             </div>
             <div class="logo-menu-sec">
                 <div class="container">
-                    <div class="logo"><h1 itemprop="headline"><a href="../file/index.php" title="Home" itemprop="url"><img src="../assets/images/momologo.png" alt="logo.png" itemprop="image"></a></h1></div>
+                    <div class="logo">
+                        <h1 itemprop="headline">
+                            <a href="../file/index.php" title="Home" itemprop="url">
+                                <img src="../assets/images/logo6.jpg" alt="foodweb.jpg" itemprop="image" height="70px" style="border-radius: 25px" >
+                            </a>
+                        </h1>
+                    </div>
                     <nav>
                         <div class="menu-sec">
                             <ul>
@@ -130,7 +136,7 @@
                 </div> -->
             </div>
             <div class="responsive-logomenu">
-                <div class="logo"><h1 itemprop="headline"><a href="../file/index.php" title="Home" itemprop="url"><img src="../assets/images/logo.png" alt="logo.png" itemprop="image"></a></h1></div>
+                <div class="logo"><h1 itemprop="headline"><a href="../file/index.php" title="Home" itemprop="url"><img src="../assets/images/foodweb.jpg" alt="logo.png" itemprop="image" style="border-radius: 25px"></a></h1></div>
                 <span class="menu-btn yellow-bg brd-rd4"><i class="fa fa-align-justify"></i></span>
             </div>
             <div class="responsive-menu">
