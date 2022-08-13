@@ -72,9 +72,9 @@ F    <link rel="stylesheet" href="../assets/css/icons.min.css">
             <div class="container">
                 <p itemprop="description"><a target="_blank" href="https://www.templateshub.net">Templates Hub</a></p>
             </div>
-        </div>   -->
+        </div>   
         
-        <!-- Bottom Bar -->
+         Bottom Bar -->
 
         <!-- <div class="newsletter-popup-wrapper text-center">
             <div class="newsletter-popup-inner" style="background-image: url(../assets/images/newsletter-bg.jpg);">
@@ -123,7 +123,7 @@ F    <link rel="stylesheet" href="../assets/css/icons.min.css">
                     </form>
                 </div>
             </div>
-        </div> -->
+        </div> 
 
         <div class="sign-popup text-center">
             <div class="sign-popup-wrapper brd-rd5">

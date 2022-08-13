@@ -6,7 +6,7 @@
     <meta name="description" content="" />
     <meta name="keywords" content="" />
     <title>Food Web</title>
-    <link rel="shortcut icon" href="../assets/images/3.jpg" type="image/x-icon" style="border-radius:50%;">
+    <link rel="shortcut icon" href="../assets/images/3.jpg" type="image/x-icon" >
     
 
     <link rel="stylesheet" href="../assets/css/icons.min.css">
@@ -60,7 +60,7 @@
                         </select>
                     </div> -->
                     <div class="topbar-register">
-                        <a class="log-popup-btn" href="#" title="Login" itemprop="url">LOGIN</a> / <a class="sign-popup-btn" href="#" title="Register" itemprop="url">REGISTER</a>
+                        <a  href="../file/userlogin.php" title="Login" itemprop="url">LOGIN</a> / <a class="sign-popup-btn" href="#" title="Register" itemprop="url">REGISTER</a>
                     </div>
                     <div class="social1">
                         <!-- <a href="#" title="Facebook" itemprop="url" target="_blank"><i class="fa fa-facebook-square"></i></a>
@@ -74,7 +74,7 @@
                     <div class="logo">
                         <h1 itemprop="headline">
                             <a href="../file/index.php" title="Home" itemprop="url">
-                                <img src="../assets/images/logo6.jpg" alt="foodweb.jpg" itemprop="image" height="70px" style="border-radius: 25px" >
+                                <img src="../assets/images/foodweb.jpg" alt="foodweb" itemprop="image" height="70px" style="border-radius: 25px" >
                             </a>
                         </h1>
                     </div>
