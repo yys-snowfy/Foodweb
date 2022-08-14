@@ -1,4 +1,5 @@
-    <link rel="stylesheet" href="../assets/css/icons.min.css">
+   
+   <link rel="stylesheet" href="../assets/css/icons.min.css">
     <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="../assets/css/animate.min.css">
     <link rel="stylesheet" href="../assets/css/main.css">
@@ -8,23 +9,29 @@
 
 
 
-<footer>
+    <footer>
         <div class="block top-padd80 bottom-padd80 dark-bg">
-                <div class="container">
+               <div class="container">
                     <div class="row">
                         <div class="col-md-12 col-sm-12 col-lg-12">
                             <div class="footer-data">
                                 <div class="row">
                                     <div class="col-md-3 col-sm-6 col-lg-3">
                                         <div class="widget about_widget wow fadeIn" data-wow-delay="0.1s">
-                                            <div class="logo"><h1 itemprop="headline"><a href="../file/index.php" title="Home" itemprop="url"><img src="../assets/images/foodweb.jpg" alt="logo.png" itemprop="image" height="50px" style="border-radius: 10px"></a></h1></div>
+                                            <div class="logo">
+                                                <h1 itemprop="headline">
+                                                    <a href="../file/index.php" title="Home" itemprop="url">
+                                                        <img src="../assets/images/foodweb.jpg" alt="logo.png" itemprop="image" height="50px" style="border-radius: 10px">
+                                                    </a>
+                                                </h1>
+                                            </div>
                                             <p itemprop="description">Food web is a best food Ordering Website. Best choice for your online store. Let purchase it to enjoy now !</p>
-                                            <div class="social2">
+                                            <!-- <div class="social2">
                                                 <a class="brd-rd50" href="#" title="Facebook" itemprop="url" target="_blank"><i class="fa fa-facebook"></i></a>
                                                 <a class="brd-rd50" href="#" title="Google Plus" itemprop="url" target="_blank"><i class="fa fa-google-plus"></i></a>
                                                 <a class="brd-rd50" href="#" title="Twitter" itemprop="url" target="_blank"><i class="fa fa-twitter"></i></a>
                                                 <a class="brd-rd50" href="#" title="Pinterest" itemprop="url" target="_blank"><i class="fa fa-pinterest"></i></a>
-                                            </div>
+                                            </div> -->
                                         </div>
                                     </div>
                                     <div class="col-md-3 col-sm-6 col-lg-3">
@@ -104,16 +111,16 @@
                         <a class="twitter brd-rd3" href="#" title="Twitter" itemprop="url" target="_blank"><i class="fa fa-twitter"></i> Twitter</a>
                     </div> -->
                     <!-- <span class="popup-seprator text-center"><i class="brd-rd50">or</i></span> -->
-                    <form class="sign-form">
+                    <form class="sign-form" method="post">
                         <div class="row">
                             <div class="col-md-12 col-sm-12 col-lg-12">
-                                <input class="brd-rd3" type="text" placeholder="Username or Email">
+                                <input class="brd-rd3" type="text" name="email" placeholder="Email">
                             </div>
                             <div class="col-md-12 col-sm-12 col-lg-12">
-                                <input class="brd-rd3" type="password" placeholder="Password">
+                                <input class="brd-rd3" type="password" name="password" placeholder="Password">
                             </div>
                             <div class="col-md-12 col-sm-12 col-lg-12">
-                                <button class="red-bg brd-rd3" type="submit">SIGN IN</button>
+                                <button class="red-bg brd-rd3" type="submit" name="submit" >SIGN IN</button>
                             </div>
                             <div class="col-md-12 col-sm-12 col-lg-12">
                                 <a class="sign-btn"  href="#" title="" itemprop="url">Not a member? Sign up</a>
@@ -139,24 +146,41 @@
                         <a class="twitter brd-rd3" href="#" title="Twitter" itemprop="url" target="_blank"><i class="fa fa-twitter"></i> Twitter</a>
                     </div> -->
                     <!-- <span class="popup-seprator text-center"><i class="brd-rd50">or</i></span> -->
-                    <form class="sign-form">
+                    <form class="sign-form" method="POST" enctype="multipart/form-data">
                         <div class="row">
                             <div class="col-md-12 col-sm-12 col-lg-12">
-                                <input class="brd-rd3" type="text" placeholder="Name">
+                                <input class="brd-rd3" type="text" name="name" placeholder="Name">
                             </div>
                             <div class="col-md-12 col-sm-12 col-lg-12">
-                                <input class="brd-rd3" type="email" placeholder="Email">
+                                <input class="brd-rd3" type="email" name="email" placeholder="Email">
+                            </div>
+                           
+                            <div class="col-md-12 col-sm-12 col-lg-12">
+                                <input class="brd-rd3" type="text" name="phone"  placeholder="Phone Number">
                             </div>
                             <div class="col-md-12 col-sm-12 col-lg-12">
-                                <input class="brd-rd3" type="password" placeholder="Password">
+                                <input class="brd-rd3" type="text" name="country" placeholder="Country">
                             </div>
                             <div class="col-md-12 col-sm-12 col-lg-12">
-                                <button class="red-bg brd-rd3" type="submit">REGISTER NOW</button>
+                                <input class="brd-rd3" type="text" name="city" placeholder="city">
                             </div>
                             <div class="col-md-12 col-sm-12 col-lg-12">
+                                <input class="brd-rd3" type="text" name="state" placeholder="state">
+                            </div>
+                            <div class="col-md-12 col-sm-12 col-lg-12">
+                                <input class="brd-rd3" type="password" name="password" placeholder="Password">
+                            </div>
+                            <div class="col-md-12 col-sm-12 col-lg-12">
+                                <input class="brd-rd3" type="password"  name="c_password placeholder="Conform Password">
+                            </div>
+                            <div class="col-md-12 col-sm-12 col-lg-12">
+                                <button class="red-bg brd-rd3" type="submit" name="submit">REGISTER NOW</button>
+                            </div>
+
+                            <!-- <div class="col-md-12 col-sm-12 col-lg-12">
                                 <a class="sign-btn" href="#" title="" itemprop="url">Already Registered? Sign in</a>
                                 <a class="recover-btn" href="#" title="" itemprop="url">Recover my password</a>
-                            </div>
+                            </div> -->
                         </div>
                     </form>
                 </div>

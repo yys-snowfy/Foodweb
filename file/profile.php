@@ -44,7 +44,7 @@ include '../layout/heading.php';
                                                     <ul class="nav nav-tabs">
                                                         <li class="active"><a href="#dashboard" data-toggle="tab"><i class="fa fa-dashboard"></i> DASHBOARD</a></li>
                                                         <!-- <li><a href="#my-bookings" data-toggle="tab"><i class="fa fa-file-text"></i> MY BOOKINGS</a></li> -->
-                                                        <li><a href="#my-reviews" data-toggle="tab"><i class="fa fa-comments"></i> MY REVIEWS</a></li>
+                                                        <!-- <li><a href="#my-reviews" data-toggle="tab"><i class="fa fa-comments"></i> MY REVIEWS</a></li> -->
                                                         <li><a href="#my-orders" data-toggle="tab"><i class="fa fa-shopping-basket"></i> MY ORDERS</a></li>
                                                         <!-- <li><a href="#shortlists" data-toggle="tab"><i class="fa fa-heart"></i> SHORTLISTS</a></li> -->
                                                         <!-- <li><a href="#statement" data-toggle="tab"><i class="fa fa-wpforms"></i> STATEMENT</a></li> -->
@@ -169,83 +169,6 @@ include '../layout/heading.php';
                                                                 </tbody>
                                                             </table>
                                                         </div>
-                                                    </div>
-                                                </div>
-                                                <div class="tab-pane fade" id="my-reviews">
-                                                    <div class="tabs-wrp brd-rd5">
-                                                        <h4 itemprop="headline">MY REVIEWS</h4>
-                                                        <div class="select-wrap-inner">
-                                                            <div class="select-wrp2">
-                                                                <select>
-                                                                    <option>Newest Reviews</option>
-                                                                    <option>Newest Reviews</option>
-                                                                    <option>Newest Reviews</option>
-                                                                </select>
-                                                            </div>
-                                                            <div class="select-wrp2">
-                                                                <select>
-                                                                    <option>Select Date Range</option>
-                                                                    <option>Select Date Range</option>
-                                                                    <option>Select Date Range</option>
-                                                                </select>
-                                                            </div>
-                                                        </div>
-                                                        <div class="review-list">
-                                                            <div class="review-box brd-rd5">
-                                                                <h4 itemprop="headline"><a href="#" title="" itemprop="url">RESTAURANT DEMO</a></h4>
-                                                                <div class="ratings">
-                                                                    <i class="fa fa-star on"></i>
-                                                                    <i class="fa fa-star on"></i>
-                                                                    <i class="fa fa-star on"></i>
-                                                                    <i class="fa fa-star off"></i>
-                                                                    <i class="fa fa-star off"></i>
-                                                                </div>
-                                                                <p itemprop="description">FoodBakery order today. So great to be able to order food and not have to talk to anyone.</p>
-                                                                <div class="review-info">
-                                                                    <img class="brd-rd50" src="../assets/images/resource/reviewr-img1.jpg" alt="reviewr-img1.jpg" itemprop="image">
-                                                                    <div class="review-info-inner">
-                                                                        <h5 itemprop="headline">QLARK JAKSON</h5>
-                                                                        <i class="red-clr">2 months Ago</i>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="review-box brd-rd5">
-                                                                <h4 itemprop="headline"><a href="#" title="" itemprop="url">RESTAURANT DEMO</a></h4>
-                                                                <div class="ratings">
-                                                                    <i class="fa fa-star on"></i>
-                                                                    <i class="fa fa-star on"></i>
-                                                                    <i class="fa fa-star on"></i>
-                                                                    <i class="fa fa-star on"></i>
-                                                                    <i class="fa fa-star off"></i>
-                                                                </div>
-                                                                <p itemprop="description">FoodBakery order today. So great to be able to order food and not have to talk to anyone.</p>
-                                                                <div class="review-info">
-                                                                    <img class="brd-rd50" src="../assets/images/resource/reviewr-img2.jpg" alt="reviewr-img2.jpg" itemprop="image">
-                                                                    <div class="review-info-inner">
-                                                                        <h5 itemprop="headline">QLARK JAKSON</h5>
-                                                                        <i class="red-clr">2 months Ago</i>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="review-box brd-rd5">
-                                                                <h4 itemprop="headline"><a href="#" title="" itemprop="url">RESTAURANT DEMO</a></h4>
-                                                                <div class="ratings">
-                                                                    <i class="fa fa-star on"></i>
-                                                                    <i class="fa fa-star on"></i>
-                                                                    <i class="fa fa-star on"></i>
-                                                                    <i class="fa fa-star on"></i>
-                                                                    <i class="fa fa-star on"></i>
-                                                                </div>
-                                                                <p itemprop="description">FoodBakery order today. So great to be able to order food and not have to talk to anyone.</p>
-                                                                <div class="review-info">
-                                                                    <img class="brd-rd50" src="../assets/images/resource/reviewr-img3.jpg" alt="reviewr-img3.jpg" itemprop="image">
-                                                                    <div class="review-info-inner">
-                                                                        <h5 itemprop="headline">QLARK JAKSON</h5>
-                                                                        <i class="red-clr">2 months Ago</i>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div><!-- Review List -->
                                                     </div>
                                                 </div>
                                                 <div class="tab-pane fade" id="my-orders">
@@ -491,7 +414,7 @@ include '../layout/heading.php';
                                                                                     <label>Country <sup>*</sup></label>
                                                                                     <div class="select-wrp">
                                                                                         <select>
-                                                                                            <option>Pakistan</option>
+                                                                                            <option>Nepal</option>
                                                                                             <option>India</option>
                                                                                             <option>USA</option>
                                                                                         </select>
@@ -511,26 +434,11 @@ include '../layout/heading.php';
                                                                                         </select>
                                                                                     </div>
                                                                                 </div>
-                                                                                <div class="col-md-6 col-sm-6 col-lg-6">
-                                                                                    <label>Latitude <sup>*</sup></label>
-                                                                                    <input class="brd-rd3" type="text">
-                                                                                </div>
-                                                                                <div class="col-md-6 col-sm-6 col-lg-6">
-                                                                                    <label>Longitude <sup>*</sup></label>
-                                                                                    <input class="brd-rd3" type="text">
+                                                                                <div class="col-md-2 col-sm-3 col-lg-3 col-xs-12">
+                                                                                <button class="brd-rd2 yellow-bg" type="submit">UPDATE</button>
                                                                                 </div>
                                                                             </div>
                                                                         </form>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-md-12 col-sm-12 col-lg-12">
-                                                                    <div class="loc-map2">
-                                                                        <div class="loc-map brd-rd3" id="loc-map"></div>
-                                                                        
-                                                                        <div class="loc-srch">
-                                                                            <input class="brd-rd3" type="text" placeholder="Type Your Address">
-                                                                            <button class="brd-rd3 red-bg" type="submit">Search Now</button>
-                                                                        </div>
                                                                     </div>
                                                                 </div>
                                                             </div>
