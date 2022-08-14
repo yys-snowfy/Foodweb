@@ -146,8 +146,11 @@
                         <a class="twitter brd-rd3" href="#" title="Twitter" itemprop="url" target="_blank"><i class="fa fa-twitter"></i> Twitter</a>
                     </div> -->
                     <!-- <span class="popup-seprator text-center"><i class="brd-rd50">or</i></span> -->
-                    <form class="sign-form" method="POST" enctype="multipart/form-data">
+                    <form class="sign-form" method="POST" enctype="multipart/form-data" action="../file/userregister.php">
                         <div class="row">
+                        <div class="col-md-12 col-sm-12 col-lg-12">
+                                <input class="brd-rd3" type="file" name="image" placeholder="image">
+                            </div>
                             <div class="col-md-12 col-sm-12 col-lg-12">
                                 <input class="brd-rd3" type="text" name="name" placeholder="Name">
                             </div>
@@ -171,7 +174,7 @@
                                 <input class="brd-rd3" type="password" name="password" placeholder="Password">
                             </div>
                             <div class="col-md-12 col-sm-12 col-lg-12">
-                                <input class="brd-rd3" type="password"  name="c_password placeholder="Conform Password">
+                                <input class="brd-rd3" type="password"  name="conform_password" placeholder="Conform Password">
                             </div>
                             <div class="col-md-12 col-sm-12 col-lg-12">
                                 <button class="red-bg brd-rd3" type="submit" name="submit">REGISTER NOW</button>
