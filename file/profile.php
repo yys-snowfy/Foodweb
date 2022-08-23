@@ -1,7 +1,29 @@
 <?php
 include '../layout/heading.php';
-session_start();
-?>
+include '../file/dbconnation.php';
+
+
+$sql = "SELECT * FROM users ";
+$res = mysqli_query($conn, $sql);
+if ($res == TRUE) {
+    $count = mysqli_num_rows($res);
+    // $ad_id = 1;
+    if ($count > 0) {
+        while ($fetch = mysqli_fetch_assoc($res)) {
+            $id=$fetch['id'];
+            $name = $fetch['Name'];
+            $email = $fetch['Email'];
+            $image = $fetch['image'];
+            $phone = $fetch['phone'];
+            $country = $fetch['country'];
+            $state = $fetch['state'];
+            $city = $fetch['city'];
+           
+        }
+
+      }
+    }
+        ?>
  <section>
             <div class="block">
                 <div class="fixed-bg" style="background-image: url(../assets/images/bgi.jpg);"></div>
@@ -35,10 +57,10 @@ session_start();
                                             <div class="profile-sidebar brd-rd5 wow fadeIn" data-wow-delay="0.2s">
                                                 <div class="profile-sidebar-inner brd-rd5">
                                                     <div class="user-info red-bg">
-                                                        <img class="brd-rd50" src="../assets/images/resource/user-avatar.jpg" alt="user-avatar.jpg" itemprop="image">
+                                                        <img class="brd-rd50" src="../assets/uploadedimage/userprofile/<?php echo $image; ?>" alt="user-avatar.jpg" itemprop="image" width="76px" hight="76px"> 
                                                         <div class="user-info-inner">
-                                                            <h5 itemprop="headline"><a href="#" title="" itemprop="url">BUYER DEMO</a></h5>
-                                                            <span><a href="#" title="" itemprop="url">dum3@chimpgroou.com</a></span>
+                                                            <h5 itemprop="headline"><a href="#" title="" itemprop="url"><?php echo $name; ?></a></h5>
+                                                            <span><a href="#" title="" itemprop="url"><?php echo $email; ?></a></span>
                                                             <a class="brd-rd3 sign-out-btn yellow-bg" href="#" title="" itemprop="url"><i class="fa fa-sign-out"></i> SIGN OUT</a>
                                                         </div>
                                                     </div>
@@ -376,7 +398,7 @@ session_start();
                                                                 <div class="col-md-4 col-sm-4 col-lg-4">
                                                                     <div class="profile-info text-center">
                                                                         <div class="profile-thumb brd-rd50">
-                                                                            <img id="profile-display" src="../assets/images/resource/profile-img1.jpg" alt="profile-img1.jpg" itemprop="image">
+                                                                            <img id="profile-display" src="../assets/uploadedimage/userprofile/<?php echo $image; ?>" alt="profile-img1.jpg" itemprop="image">
                                                                         </div>
                                                                         <a class="red-clr change-password" href="#" title="" itemprop="url">Change Password</a>
                                                                         <div class="profile-img-upload-btn">
@@ -401,34 +423,36 @@ session_start();
                                                                             <div class="row mrg20">
                                                                                 <div class="col-md-12 col-sm-12 col-lg-12">
                                                                                     <label>Complete Name <sup>*</sup></label>
-                                                                                    <input class="brd-rd3" type="text" placeholder="Enter Your Name">
+                                                                                    <input class="brd-rd3" type="text" name="name" value="<?php echo $name; ?>">
                                                                                 </div>
                                                                                 <div class="col-md-12 col-sm-12 col-lg-12">
                                                                                     <label>Email Address <sup>*</sup></label>
-                                                                                    <input class="brd-rd3" type="email" placeholder="Enter Your Email Address">
+                                                                                    <input class="brd-rd3" type="email" name="email"  value="<?php echo $email ?>">
                                                                                 </div>
                                                                                 <div class="col-md-12 col-sm-12 col-lg-12">
                                                                                     <label>Phone No <sup>*</sup></label>
-                                                                                    <input class="brd-rd3" type="text" placeholder="Enter Your Phone No">
+                                                                                    <input class="brd-rd3" type="text" name="phone"  value="<?php echo $phone; ?>">
                                                                                 </div>
                                                                                 <div class="col-md-12 col-sm-12 col-lg-12">
                                                                                     <label>Country <sup>*</sup></label>
                                                                                     <div class="select-wrp">
                                                                                         <select>
-                                                                                            <option>Nepal</option>
+                                                                                            <option> <?php echo $country; ?></option>
+                                                                                            <!-- <option>Nepal</option>
                                                                                             <option>India</option>
-                                                                                            <option>USA</option>
+                                                                                            <option>USA</option> -->
                                                                                         </select>
                                                                                     </div>
                                                                                 </div>
                                                                                 <div class="col-md-6 col-sm-6 col-lg-6">
                                                                                     <label>State <sup>*</sup></label>
-                                                                                    <input class="brd-rd3" type="text">
+                                                                                    <input class="brd-rd3" type="text"  value="<?php echo $state; ?>">
                                                                                 </div>
                                                                                 <div class="col-md-6 col-sm-6 col-lg-6">
                                                                                     <label>City <sup>*</sup></label>
                                                                                     <div class="select-wrp">
                                                                                         <select>
+                                                                                            <option value=""><?php echo $city; ?></option>
                                                                                             <option>Karachi</option>
                                                                                             <option>Multan</option>
                                                                                             <option>Lahore</option>
@@ -436,7 +460,7 @@ session_start();
                                                                                     </div>
                                                                                 </div>
                                                                                 <div class="col-md-2 col-sm-3 col-lg-3 col-xs-12">
-                                                                                <button class="brd-rd2 yellow-bg" type="submit">UPDATE</button>
+                                                                                <button class="brd-rd2 yellow-bg" type="submit" name="submit">UPDATE</button>
                                                                                 </div>
                                                                             </div>
                                                                         </form>
