@@ -1,9 +1,9 @@
 <?php
 include '../file/dbconnation.php';
 
-if(isset($_POST['Signin']))
+if(isset($_POST['submit']))
 {
-    $query="SELECT * FROM `users` WHERE Email='$_POST[email]' AND passwords='$_POST[password]'";
+    $query="SELECT * FROM `users` WHERE Email='$_POST[email]' AND Password='$_POST[password]'";
 
    $result=mysqli_query($conn,$query);
    $row = mysqli_fetch_assoc($result);
@@ -23,7 +23,7 @@ if(isset($_POST['Signin']))
         $msg = 'User Logged In Successfully';
         // echo "index.php?msg=".$msg;die;
         $status='success';
-       header("location: index.php?msg=".$msg."&&status=".$status);
+       header("location: ../file/index.php?msg=".$msg."&&status=".$status);
    }else{
        echo "<script> alert('Incorrect Password');</script>";
    }
