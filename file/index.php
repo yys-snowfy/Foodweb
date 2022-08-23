@@ -1,4 +1,5 @@
 <?php
+include '../file/dbconnation.php';
 session_start();
     // echo $_SESSION['islogin'];
 
@@ -94,21 +95,40 @@ require '../vender/massage.php';
                                     <p itemprop="description">Things that get tricky are things like burgers and fries, or things that are deep-fried. We do have a couple of burger restaurants that are capable of doing a good job transporting but it's  Fries are almost impossible.</p>
                                 </div>
                             </div>
+                            <?php  
+                                 $sql = "SELECT * FROM vendor LIMIT 4";
+                                 $res = mysqli_query($conn, $sql);
+                                                                 
+                                 if ($res == TRUE) {
+                                     $count = mysqli_num_rows($res);
+                                         if ($count > 0) {
+                                            
+                                         while ($fetch = mysqli_fetch_assoc($res)) {
+                     
+                                             $id = $fetch['id'];
+                                             $image = $fetch['reslogo'];                                         
+                                    //         }
+                                    //     }
+                                    // }                                      
+                                        
+                                    
+                            ?>
                             <div class="top-restaurants-wrapper">
                                 <ul class="restaurants-wrapper style2">
-                                    <li class="wow bounceIn" data-wow-delay="0.2s"><div class="top-restaurant"><a class="brd-rd50" href="#" title="Restaurant 1" itemprop="url"><img src="../assets/images/resource/top-restaurant1.png" alt="top-restaurant1.png" itemprop="image"></a></div></li>
-                                    <li class="wow bounceIn" data-wow-delay="0.4s"><div class="top-restaurant"><a class="brd-rd50" href="#" title="Restaurant 2" itemprop="url"><img src="../assets/images/resource/top-restaurant2.png" alt="top-restaurant2.png" itemprop="image"></a></div></li>
-                                    <li class="wow bounceIn" data-wow-delay="0.6s"><div class="top-restaurant"><a class="brd-rd50" href="#" title="Restaurant 3" itemprop="url"><img src="../assets/images/resource/top-restaurant3.png" alt="top-restaurant3.png" itemprop="image"></a></div></li>
-                                    <li class="wow bounceIn" data-wow-delay="0.8s"><div class="top-restaurant"><a class="brd-rd50" href="#" title="Restaurant 4" itemprop="url"><img src="../assets/images/resource/top-restaurant4.png" alt="top-restaurant4.png" itemprop="image"></a></div></li>
-                                    <li class="wow bounceIn" data-wow-delay="1s"><div class="top-restaurant"><a class="brd-rd50" href="#" title="Restaurant 5" itemprop="url"><img src="../assets/images/resource/top-restaurant5.png" alt="top-restaurant5.png" itemprop="image"></a></div></li>
-                                    <li class="wow bounceIn" data-wow-delay="1.2s"><div class="top-restaurant"><a class="brd-rd50" href="#" title="Restaurant 5" itemprop="url"><img src="../assets/images/resource/top-restaurant6.png" alt="top-restaurant6.png" itemprop="image"></a></div></li>
-                                </ul>
+                                                                  
+                                <li class="wow bounceIn" id="logo" data-wow-delay="0.2s"><div class="top-restaurant"><a class="brd-rd50" href="#" title="Restaurant 1" itemprop="url"><img src="../assets/uploadedimage/reslogo/<?php echo $image ?>" alt="top-restaurant1.png" itemprop="image"></a></div></li> 
+                               
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section><!-- top resturents -->
+        <?php 
+                     }
+                 }
+             }
+             ?>
 
         <section>
             <div class="block">
