@@ -116,7 +116,7 @@ require '../vender/massage.php';
                             <div class="top-restaurants-wrapper">
                                 <ul class="restaurants-wrapper style2">
                                                                   
-                                <li class="wow bounceIn" id="logo" data-wow-delay="0.2s"><div class="top-restaurant"><a class="brd-rd50" href="#" title="Restaurant 1" itemprop="url"><img src="../assets/uploadedimage/reslogo/<?php echo $image ?>" alt="top-restaurant1.png" itemprop="image"></a></div></li> 
+                                <li  data-wow-delay="0.2s"><div class="top-restaurant"><a class="brd-rd50" href="#" title="Restaurant 1" itemprop="url"><img src="../assets/uploadedimage/reslogo/<?php echo $image ?>" alt="top-restaurant1.png" itemprop="image"></a></div></li> 
                                
                             </div>
                         </div>
