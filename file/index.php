@@ -1,5 +1,22 @@
+<?php
+session_start();
+    // echo $_SESSION['islogin'];
+
+if(isset($_SESSION['islogin']) && ($_SESSION['islogin'] == true)){ //if login in session is not set
+    // header("Location:index.php");
+
+}else{
+   
+    // die;
+    // header("Location:venderLogin.php");
+}
+
+?>
+
+
 <?php 
 include '../layout/heading.php';
+require '../vender/massage.php';
  ?>
             <section>
             <div class="block">

@@ -111,7 +111,7 @@
                         <a class="twitter brd-rd3" href="#" title="Twitter" itemprop="url" target="_blank"><i class="fa fa-twitter"></i> Twitter</a>
                     </div> -->
                     <!-- <span class="popup-seprator text-center"><i class="brd-rd50">or</i></span> -->
-                    <form class="sign-form" method="post">
+                    <form class="sign-form" method="post" action="../file/userlogin.php">
                         <div class="row">
                             <div class="col-md-12 col-sm-12 col-lg-12">
                                 <input class="brd-rd3" type="text" name="email" placeholder="Email">
@@ -122,10 +122,10 @@
                             <div class="col-md-12 col-sm-12 col-lg-12">
                                 <button class="red-bg brd-rd3" type="submit" name="submit" >SIGN IN</button>
                             </div>
-                            <div class="col-md-12 col-sm-12 col-lg-12">
+                            <!-- <div class="col-md-12 col-sm-12 col-lg-12">
                                 <a class="sign-btn"  href="#" title="" itemprop="url">Not a member? Sign up</a>
                                 <a class="recover-btn" href="#" title="" itemprop="url">Recover my password</a>
-                            </div>
+                            </div> -->
                         </div>
                     </form>
                 </div>

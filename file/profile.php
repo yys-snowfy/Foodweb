@@ -1,5 +1,6 @@
 <?php
 include '../layout/heading.php';
+session_start();
 ?>
  <section>
             <div class="block">
