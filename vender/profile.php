@@ -1,8 +1,11 @@
 <?php
+session_start();
 include '../vender/header.php';
     include '../file/dbconnation.php';
+    $id= $_SESSION['user_id'];
+
     
-    $sql = "SELECT * FROM vendor ";
+    $sql = "SELECT * FROM vendor Where id= $id";
             $res = mysqli_query($conn, $sql);
             if ($res == TRUE) {
                 $count = mysqli_num_rows($res);
@@ -20,10 +23,9 @@ include '../vender/header.php';
                         $city = $fetch['city'];
                         $username = $fetch['username'];
                         $logo =$fetch['reslogo'];
+                      }
                     }
-
                   }
-                }
                     ?>
 
 <div class="container">      
@@ -130,6 +132,7 @@ include '../vender/header.php';
  
 
 <?php
+
   // profile update code
 
 if(isset($_POST['submit'])){  
