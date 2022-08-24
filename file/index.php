@@ -111,9 +111,7 @@ require '../vender/massage.php';
                                              $state =$fetch['states'];
                                              $city =$fetch['city'];                                       
                                              $country =$fetch['country']
-                                    //         }
-                                    //     }
-                                    // }                                      
+                                                                
                                         
                                     
                             ?>
@@ -122,12 +120,7 @@ require '../vender/massage.php';
                                                                   
                                 <li class="wow bounceIn" data-wow-delay="0.2s"><div class="top-restaurant"><a class="brd-rd50" href="#" title="Restaurant 1" itemprop="url"><img src="../assets/uploadedimage/reslogo/<?php echo $logo ?>" alt="top-restaurant1.png" itemprop="image"></a></div></li> 
                                
-                                    <!-- <li class="wow bounceIn" data-wow-delay="0.2s"><div class="top-restaurant"><a class="brd-rd50" href="#" title="Restaurant 1" itemprop="url"><img src="../assets/images/resource/top-restaurant1.png" alt="top-restaurant1.png" itemprop="image"></a></div></li>
-                                    <li class="wow bounceIn" data-wow-delay="0.4s"><div class="top-restaurant"><a class="brd-rd50" href="#" title="Restaurant 2" itemprop="url"><img src="../assets/images/resource/top-restaurant2.png" alt="top-restaurant2.png" itemprop="image"></a></div></li>
-                                    <li class="wow bounceIn" data-wow-delay="0.6s"><div class="top-restaurant"><a class="brd-rd50" href="#" title="Restaurant 3" itemprop="url"><img src="../assets/images/resource/top-restaurant3.png" alt="top-restaurant3.png" itemprop="image"></a></div></li>
-                                    <li class="wow bounceIn" data-wow-delay="0.8s"><div class="top-restaurant"><a class="brd-rd50" href="#" title="Restaurant 4" itemprop="url"><img src="../assets/images/resource/top-restaurant4.png" alt="top-restaurant4.png" itemprop="image"></a></div></li>
-                                    <li class="wow bounceIn" data-wow-delay="1s"><div class="top-restaurant"><a class="brd-rd50" href="#" title="Restaurant 5" itemprop="url"><img src="../assets/images/resource/top-restaurant5.png" alt="top-restaurant5.png" itemprop="image"></a></div></li> -->
-                                    <!-- <li class="wow bounceIn" data-wow-delay="1.2s"><div class="top-restaurant"><a class="brd-rd50" href="#" title="Restaurant 5" itemprop="url"><img src="../assets/images/resource/top-restaurant6.png" alt="top-restaurant6.png" itemprop="image"></a></div></li> -->
+                                   
                                 </ul>
                             </div>
                         </div>
@@ -135,9 +128,11 @@ require '../vender/massage.php';
                 </div>
             </div>
         </section><!-- top resturents -->
-        <?php 
-               
-             ?>
+       <?php
+       }
+         }
+        }
+        ?>
 
         <section>
             <div class="block">
@@ -164,10 +159,7 @@ require '../vender/massage.php';
                                              $image =$fetch['foodimage'];
                                              $price = $fetch['foodprice']
                                              
-                                                                                    
-                                    //         }
-                                    //     }
-                                    // }                                      
+                                                                    
                                         
                                     
                             ?>
@@ -205,9 +197,7 @@ require '../vender/massage.php';
                                 }
                             }
                         //vendor
-                    }
-                }
-            }
+                    
                             
                             ?>
                                     
@@ -378,12 +368,7 @@ require '../vender/massage.php';
                                         <h2 itemprop="headline">choose your food</h2>
                                     </div>
                                 </div>
-                                <!-- <ul class="filter-buttons center ext-btm20">
-                                    <li class="active"><a class="brd-rd30" data-filter="*" href="#" itemprop="url">All</a></li>
-                                    <li><a class="brd-rd30" data-filter=".filter-item1" href="#" itemprop="url">Beverages</a></li>
-                                    <li><a class="brd-rd30" data-filter=".filter-item2" href="#" itemprop="url">Burgers</a></li>
-                                    <li><a class="brd-rd30" data-filter=".filter-item3" href="#" itemprop="url">Pasta</a></li>
-                                </ul> Filter Buttons -->
+                               
                                 <div class="filters-inner">
                                     <div class="row">
                                         <div class="masonry">
@@ -398,8 +383,8 @@ require '../vender/massage.php';
                                                         <span class="food-types">Type of food: <a href="#" title="" itemprop="url">Apple Juice</a>, <a href="#" title="" itemprop="url">BB.Q</a>, <a href="#" title="" itemprop="url">Beef Roast</a></span>
                                                         <ul class="post-meta">
                                                             <li><i class="fa fa-check-circle-o"></i> Min order Rs.50</li>
-                                                            <li><i class="flaticon-transport"></i> 30min</li>
-                                                            <li><i class="flaticon-money"></i> Accepts cash & online payments</li>
+                                                            
+                                                            <li><i class="flaticon-money"></i> Accepts cash payments</li>
                                                         </ul>
                                                         
                                                         <a class="brd-rd5" href="restaurant-detail.html" title="Order Online">Order Now</a>
@@ -417,8 +402,8 @@ require '../vender/massage.php';
                                                         <span class="food-types">Type of food: <a href="#" title="" itemprop="url">Apple Juice</a>, <a href="#" title="" itemprop="url">BB.Q</a>, <a href="#" title="" itemprop="url">Beef Roast</a></span>
                                                         <ul class="post-meta">
                                                             <li><i class="fa fa-check-circle-o"></i> Min order Rs.50</li>
-                                                            <li><i class="flaticon-transport"></i> 30min</li>
-                                                            <li><i class="flaticon-money"></i> Accepts cash & online payments</li>
+                                                            
+                                                            <li><i class="flaticon-money"></i> Accepts cash payments</li>
                                                         </ul>
                                                         
                                                         <a class="brd-rd5" href="restaurant-detail.html" title="Order Online">Order Now</a>
@@ -436,7 +421,7 @@ require '../vender/massage.php';
                                                         <span class="food-types">Type of food: <a href="#" title="" itemprop="url">Apple Juice</a>, <a href="#" title="" itemprop="url">BB.Q</a>, <a href="#" title="" itemprop="url">Beef Roast</a></span>
                                                         <ul class="post-meta">
                                                             <li><i class="fa fa-check-circle-o"></i> Min order Rs.50</li>
-                                                            <li><i class="flaticon-transport"></i> 30min</li>
+                                                           
                                                             <li><i class="flaticon-money"></i> Accepts cash & online payments</li>
                                                         </ul>
                                                        
