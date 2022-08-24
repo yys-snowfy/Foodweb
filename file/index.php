@@ -129,9 +129,9 @@ require '../vender/massage.php';
             </div>
         </section><!-- top resturents -->
        <?php
-       }
-         }
-        }
+                           }
+                        }
+                       }
         ?>
 
         <section>
@@ -157,16 +157,14 @@ require '../vender/massage.php';
                                              $id = $fetch['id'];
                                              $name = $fetch['foodname']; 
                                              $image =$fetch['foodimage'];
-                                             $price = $fetch['foodprice']
-                                             
-                                                                    
+                                             $price = $fetch['foodprice'];                                   
+                                             $resid = $fetch['resid']; 
+                                             $res_all = "select * from vendor where id = '$resid'";
+                                             $res_name = mysqli_query($conn, $res_all);
+                                             $fetch1 = mysqli_fetch_assoc($res_name)                       
                                         
                                     
                             ?>
-
-
-
-
                             </div>
                                 <div class="row remove-ext5">
                                     <div class="col-md-4 col-sm-6 col-lg-4">
@@ -185,7 +183,7 @@ require '../vender/massage.php';
                                                 <div class="restaurant-info">
                                                     <img src="../assets/uploadedimage/reslogo/<?php echo $logo ?>" alt="restaurant-logo1.png" itemprop="image" height=50px; width= auto;>
                                                     <div class="restaurant-info-inner">
-                                                        <h6 itemprop="headline"><a href="restaurant-detail.html" title="" itemprop="url"><?=$resname?></a></h6>
+                                                        <h6 itemprop="headline"><a href="restaurant-detail.html" title="" itemprop="url"><?php echo $fetch1['resname']?></a></h6>
                                                         <span class="red-clr"><?=$city?>,<?=$country?></span>
                                                     </div>
                                                 </div>
@@ -197,7 +195,7 @@ require '../vender/massage.php';
                                 }
                             }
                         //vendor
-                    
+
                             
                             ?>
                                     
