@@ -106,7 +106,11 @@ require '../vender/massage.php';
                                          while ($fetch = mysqli_fetch_assoc($res)) {
                      
                                              $id = $fetch['id'];
-                                             $image = $fetch['reslogo'];                                         
+                                             $resname = $fetch['resname']; 
+                                             $logo = $fetch['reslogo'];
+                                             $state =$fetch['states'];
+                                             $city =$fetch['city'];                                       
+                                             $country =$fetch['country']
                                     //         }
                                     //     }
                                     // }                                      
@@ -116,7 +120,7 @@ require '../vender/massage.php';
                             <div class="top-restaurants-wrapper">
                                 <ul class="restaurants-wrapper style2">
                                                                   
-                                <li class="wow bounceIn" data-wow-delay="0.2s"><div class="top-restaurant"><a class="brd-rd50" href="#" title="Restaurant 1" itemprop="url"><img src="../assets/uploadedimage/reslogo/<?php echo $image ?>" alt="top-restaurant1.png" itemprop="image"></a></div></li> 
+                                <li class="wow bounceIn" data-wow-delay="0.2s"><div class="top-restaurant"><a class="brd-rd50" href="#" title="Restaurant 1" itemprop="url"><img src="../assets/uploadedimage/reslogo/<?php echo $logo ?>" alt="top-restaurant1.png" itemprop="image"></a></div></li> 
                                
                                     <!-- <li class="wow bounceIn" data-wow-delay="0.2s"><div class="top-restaurant"><a class="brd-rd50" href="#" title="Restaurant 1" itemprop="url"><img src="../assets/images/resource/top-restaurant1.png" alt="top-restaurant1.png" itemprop="image"></a></div></li>
                                     <li class="wow bounceIn" data-wow-delay="0.4s"><div class="top-restaurant"><a class="brd-rd50" href="#" title="Restaurant 2" itemprop="url"><img src="../assets/images/resource/top-restaurant2.png" alt="top-restaurant2.png" itemprop="image"></a></div></li>
@@ -132,9 +136,7 @@ require '../vender/massage.php';
             </div>
         </section><!-- top resturents -->
         <?php 
-                     }
-                 }
-             }
+               
              ?>
 
         <section>
@@ -160,7 +162,9 @@ require '../vender/massage.php';
                                              $id = $fetch['id'];
                                              $name = $fetch['foodname']; 
                                              $image =$fetch['foodimage'];
-                                             $price = $fetch['foodprice']                                        
+                                             $price = $fetch['foodprice']
+                                             
+                                                                                    
                                     //         }
                                     //     }
                                     // }                                      
@@ -176,22 +180,21 @@ require '../vender/massage.php';
                                     <div class="col-md-4 col-sm-6 col-lg-4">
                                         <div class="popular-dish-box wow fadeIn" data-wow-delay="0.2s">
                                             <div class="popular-dish-thumb">
-                                                <a href="food-detail.html" title="" itemprop="url"><img src="../assets/uploadedimage/foodimage/<?php echo $image ?>" alt="popular-dish-img1.jpg" itemprop="image"></a>
-                                                <!-- <span class="post-rate yellow-bg brd-rd2"><i class="fa fa-star-o"></i> 4.25</span>
-                                                <span class="post-likes brd-rd4"><i class="fa fa-heart-o"></i> 12</span> -->
+                                                <a href="#" title="" itemprop="url"><img src="../assets/uploadedimage/foodimage/<?php echo $image ?>" alt="popular-dish-img1.jpg" itemprop="image"></a>
+                                                
                                             </div>
                                             <div class="popular-dish-info">
                                                 <h4 itemprop="headline">
                                                     <?=$name;?>
 												</h4>
-                                                <!-- <p itemprop="description">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p> -->
+                                            
                                                 <span class="price">Rs.<?=$price?></span>
                                                 <a class="brd-rd2" href="food-detail.html" title="Order Now" itemprop="url">Order Now</a>
                                                 <div class="restaurant-info">
-                                                    <img src="../assets/images/resource/restaurant-logo1.png" alt="restaurant-logo1.png" itemprop="image">
+                                                    <img src="../assets/uploadedimage/reslogo/<?php echo $logo ?>" alt="restaurant-logo1.png" itemprop="image" height=50px; width= auto;>
                                                     <div class="restaurant-info-inner">
-                                                        <h6 itemprop="headline"><a href="restaurant-detail.html" title="" itemprop="url">Fabio al Porto Ristorante</a></h6>
-                                                        <span class="red-clr">5th Avenue New York 68</span>
+                                                        <h6 itemprop="headline"><a href="restaurant-detail.html" title="" itemprop="url"><?=$resname?></a></h6>
+                                                        <span class="red-clr"><?=$city?>,<?=$country?></span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -201,6 +204,11 @@ require '../vender/massage.php';
                                     }
                                 }
                             }
+                        //vendor
+                    }
+                }
+            }
+                            
                             ?>
                                     
                                             
