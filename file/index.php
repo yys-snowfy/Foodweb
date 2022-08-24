@@ -147,21 +147,45 @@ require '../vender/massage.php';
                                     <span>Your Favourite Food</span>
                                     <h2 itemprop="headline">Choose & Enjoy</h2>
                                 </div>
+                                <?php  
+                                 $sql = "SELECT * FROM foods LIMIT 3 ";
+                                 $res = mysqli_query($conn, $sql);
+                                                                 
+                                 if ($res == TRUE) {
+                                     $count = mysqli_num_rows($res);
+                                         if ($count > 0) {
+                                            
+                                         while ($fetch = mysqli_fetch_assoc($res)) {
+                     
+                                             $id = $fetch['id'];
+                                             $name = $fetch['foodname']; 
+                                             $image =$fetch['foodimage'];
+                                             $price = $fetch['foodprice']                                        
+                                    //         }
+                                    //     }
+                                    // }                                      
+                                        
+                                    
+                            ?>
+
+
+
+
                             </div>
                                 <div class="row remove-ext5">
                                     <div class="col-md-4 col-sm-6 col-lg-4">
                                         <div class="popular-dish-box wow fadeIn" data-wow-delay="0.2s">
                                             <div class="popular-dish-thumb">
-                                                <a href="food-detail.html" title="" itemprop="url"><img src="../assets/images/resource/popular-dish-img1.jpg" alt="popular-dish-img1.jpg" itemprop="image"></a>
+                                                <a href="food-detail.html" title="" itemprop="url"><img src="../assets/uploadedimage/foodimage/<?php echo $image ?>" alt="popular-dish-img1.jpg" itemprop="image"></a>
                                                 <!-- <span class="post-rate yellow-bg brd-rd2"><i class="fa fa-star-o"></i> 4.25</span>
                                                 <span class="post-likes brd-rd4"><i class="fa fa-heart-o"></i> 12</span> -->
                                             </div>
                                             <div class="popular-dish-info">
-                                                <h4 itemprop="headline"><a href="food-detail.html" title="" itemprop="url">
-													Maenaam Thai Restaurant</a>
+                                                <h4 itemprop="headline">
+                                                    <?=$name;?>
 												</h4>
-                                                <p itemprop="description">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
-                                                <span class="price">Rs.85.00</span>
+                                                <!-- <p itemprop="description">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p> -->
+                                                <span class="price">Rs.<?=$price?></span>
                                                 <a class="brd-rd2" href="food-detail.html" title="Order Now" itemprop="url">Order Now</a>
                                                 <div class="restaurant-info">
                                                     <img src="../assets/images/resource/restaurant-logo1.png" alt="restaurant-logo1.png" itemprop="image">
@@ -173,51 +197,13 @@ require '../vender/massage.php';
                                             </div>
                                         </div><!-- Popular Dish Box -->
                                     </div>
-                                    <div class="col-md-4 col-sm-6 col-lg-4">
-                                        <div class="popular-dish-box wow fadeIn" data-wow-delay="0.4s">
-                                            <div class="popular-dish-thumb">
-                                                <a href="food-detail.html" title="" itemprop="url"><img src="../assets/images/resource/popular-dish-img2.jpg" alt="popular-dish-img2.jpg" itemprop="image"></a>
-                                                <!-- <span class="post-rate yellow-bg brd-rd2"><i class="fa fa-star-o"></i> 3.25</span>
-                                                <span class="post-likes brd-rd4"><i class="fa fa-heart-o"></i> 10</span>-->
-                                            </div> 
-                                            <div class="popular-dish-info">
-                                                <h4 itemprop="headline"><a href="food-detail.html" title="" itemprop="url">
-													Champignon somen Noodles</a>
-												</h4>
-                                                <p itemprop="description">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
-                                                <span class="price">Rs.70.00</span>
-                                                <a class="brd-rd2" href="food-detail.html" title="Order Now" itemprop="url">Order Now</a>
-                                                <div class="restaurant-info">
-                                                    <img src="../assets/images/resource/restaurant-logo1.png" alt="restaurant-logo2.png" itemprop="image">
-                                                    <div class="restaurant-info-inner">
-                                                        <h6 itemprop="headline"><a href="restaurant-detail.html" title="" itemprop="url">Fabio al Porto Ristorante</a></h6>
-                                                        <span class="red-clr">5th Avenue New York 68</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div><!-- Popular Dish Box -->
-                                    </div>
-                                    <div class="col-md-4 col-sm-6 col-lg-4">
-                                        <div class="popular-dish-box wow fadeIn" data-wow-delay="0.6s">
-                                            <div class="popular-dish-thumb">
-                                                <a href="food-detail.html" title="" itemprop="url"><img src="../assets/images/resource/popular-dish-img3.jpg" alt="popular-dish-img3.jpg" itemprop="image"></a>
-                                                <!-- <span class="post-rate yellow-bg brd-rd2"><i class="fa fa-star-o"></i> 5.00</span>
-                                                <span class="post-likes brd-rd4"><i class="fa fa-heart-o"></i> 15</span> -->
-                                            </div>
-                                            <div class="popular-dish-info">
-                                                <h4 itemprop="headline"><a href="food-detail.html" title="" itemprop="url">
-													Tomatoes & Clams Pasta</a></h4>
-                                                <p itemprop="description">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
-                                                <span class="price">Rs.99.00</span>
-                                                <a class="brd-rd2" href="food-detail.html" title="Order Now" itemprop="url">Order Now</a>
-                                                <div class="restaurant-info">
-                                                    <img src="../assets/images/resource/restaurant-logo1.png" alt="restaurant-logo3.png" itemprop="image">
-                                                    <div class="restaurant-info-inner">
-                                                        <h6 itemprop="headline"><a href="restaurant-detail.html" title="" itemprop="url">Fabio al Porto Ristorante</a></h6>
-                                                        <span class="red-clr">5th Avenue New York 68</span>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                    <?php
+                                    }
+                                }
+                            }
+                            ?>
+                                    
+                                            
                                         </div><!-- Popular Dish Box -->
                                     </div>
                                 </div>
